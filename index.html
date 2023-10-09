@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fractal Tree</title>
+    <style>
+        *{
+            color:  white;
+        }
+        body{
+            display: flex;
+        }
+        #facproperty{
+            width: 30vw;
+            margin-left: 10px;
+        }
+        p{
+            display: inline-block;
+            margin-right: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 2rem;
+        }
+        .colorpicker{
+            margin-right: 20px;
+        }
+    </style>
+ 
+</head>
+<body>
+    <canvas style="background-color: black;" id="canvas"></canvas>
+ 
+    <div style="background-color:  #005067" id="facproperty">
+        <h1 style="text-align: center;">Fractal Tree</h1>
+        <div style="margin-top: 50px; margin-left: 20px;">
+            <p>Twig Color : </p>
+            <input type="color" id="colorPickerTwig" class="colorpicker" value="#008000" style="height: 50px; width: 50px;"> 
+            <p>Branch Color:</p>
+            <input type="color" id="colorPickerbranch"  class="colorpicker" value="#FFFFFF" style="height: 50px; width: 50px;"> 
+        </div>
+        
+        
+        <div style="margin-top: 100px; margin-left: 20px;"> 
+             <p style="display: inline-block;">Angle : </p>
+            <input type="range" id="slider" min="0" max="90">
+        </div>
+       
+    
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
